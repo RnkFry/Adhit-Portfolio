@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <title>Web Adhit</title>
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Alif Adhitya Rambani</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/RnkFry" target="_blank" rel="noopener noreferrer">Github</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/alif-adhitya/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li class="nav-item">
+            <!-- Tombol Resume buka modal -->
+            <button class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#resumeModal">
+              Resume
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Resume Modal -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title">My Resume</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <!-- Body (CV) -->
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <!-- Ganti path ke CV kamu -->
+            <iframe src="assets/CV_Adhit.pdf" frameborder="0"></iframe>
+          </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="modal-footer">
+          <a href="assets/CV_Adhit.pdf" download class="btn btn-success">
+            <i class="bi bi-download"></i> Download
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle"></i> Close
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Hero Section -->
+<section class="container d-flex align-items-center" style="min-height: 85vh;">
+  <div class="row align-items-center w-100">
+    
+    <!-- Text kiri  -->
+    <div class="col-md-5 offset-md-1 mb-4 mb-md-0">
+      <p class="text-muted fs-4">I am</p>
+        <h1 class="fw-bold display-3">Adhit</h1>
+        <p class="lead fs-5">
+          I am a fresh graduate in Informatics Engineering and a passionate learner in 
+          Data Analytics, Machine Learning, and Web Development. I am a highly motivated 
+          learner with a strong eagerness to grow and the ability to leverage AI tools 
+          (such as Chatbots) to enhance both my learning process and professional work. 
+          Check out my experiences, projects, and certifications below.
+        </p>
+      <a href="#experiences" class="btn btn-primary btn-lg mt-3">View My Work</a>
+    </div>
+    
+    <!-- Gambar kanan -->
+    <div class="col-md-5 text-end">
+      <img src="Image/Foto_Profile_Web.jpg" class="img-fluid rounded shadow" alt="Profile" width="380" style="margin-left:20px;">
+    </div>
+  
+  </div>
+</section>
+
+
+  <!-- My Work and Experience Section -->
+<section class="container my-5" id="experiences">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">My Work and Experience</h2>
+    <p class="text-muted">
+      Take a look at some of the things I love working on and what I have been interested in and learned so far
+    </p>
+  </div>
+
+  <div class="row text-center g-4">
+    <!-- Thesis / Final Project -->
+    <div class="col-md-4">
+      <div class="p-4 text-center">
+        <i class="bi bi-cloud fs-1 text-primary"></i>
+        <h5 class="mt-3">Thesis / Final Project (Machine Learning Application)</h5>
+        <p class="text-muted">
+          I maintain servers for database storage, model training, and model deployment.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://drive.google.com/drive/folders/1VjOtKLZbf-t7i-0QVWgr2s3fbS1O-8ck?usp=sharing" target="_blank" class="text-decoration-none fw-semibold text-success">Documentation</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Scraping NLP -->
+    <div class="col-md-4">
+      <div class="p-4 text-center">
+        <i class="bi bi-chat-dots fs-1 text-primary"></i>
+        <h5 class="mt-3">Web Scraping & Preprocessing NLP</h5>
+        <p class="text-muted">
+          I have worked with researchers to apply NLP techniques to make sense of the motivations behind human interactions.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://drive.google.com/drive/folders/1_0z2eZI3PMNC5fHDCrvSapPRVlJlmYko?usp=sharing" target="_blank" class="text-decoration-none fw-semibold text-success">Documentation</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MLP Capstone -->
+    <div class="col-md-4">
+      <div class="p-4 text-center">
+        <i class="bi bi-cpu fs-1 text-primary"></i>
+        <h5 class="mt-3">MLP - Bangkit Capstone</h5>
+        <p class="text-muted">
+          Machine learning is more than an API call to scikit-learn. I love the math, theory, and implementation.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://github.com/RyanRizaldy/StuntTrack" target="_blank" class="text-decoration-none fw-semibold text-primary">Github</a>
+          <a href="https://www.linkedin.com/posts/alif-adhitya_stuntrack-bangkit-lifeatbangkit-activity-7274024511098773504-NRil?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj-MOsBIKopbe97eBA8VuoLG3m0igWEuSs" target="_blank" class="text-decoration-none fw-semibold text-success">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Analytics (Python Streamlit) -->
+    <div class="col-md-4">
+      <div class="p-4 text-center">
+        <i class="bi bi-bar-chart fs-1 text-primary"></i>
+        <h5 class="mt-3">Data Analytics (Python Streamlit)</h5>
+        <p class="text-muted">
+          I regularly explore optimization techniques and distributed systems for faster computation.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://github.com/RnkFry/Analisa-Data-Peminjaman-Sepeda-Bangkit-Submission/tree/master" target="_blank" class="text-decoration-none fw-semibold text-primary">Github</a>
+          <a href="https://rnkfry-analisa-data-peminjaman-sepeda-dashboarddashboard-bapcv5.streamlit.app/" target="_blank" class="text-decoration-none fw-semibold text-success">Result</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Assistant Lab Coordinator -->
+    <div class="col-md-4">
+      <div class="p-4 text-center">
+        <i class="bi bi-layers fs-1 text-primary"></i>
+        <h5 class="mt-3">Assistant Laboratorium (Coordinator)</h5>
+        <p class="text-muted">
+          I regularly explore optimization techniques and distributed systems for faster computation.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://www.instagram.com/p/C4m7_pzRGMe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== target="_blank" class="text-decoration-none fw-semibold text-success">Documentation</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seminar Nasional -->
+    <div class="col-md-4">
+      <div class="p-4 text-center">
+        <i class="bi bi-easel2 fs-1 text-primary"></i>
+        <h5 class="mt-3">Seminar Nasional Chairperson</h5>
+        <p class="text-muted">
+          I regularly explore optimization techniques and distributed systems for faster computation.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://www.linkedin.com/posts/alif-adhitya_itpln-ften-seminarnasional-activity-7214993130327015425-H7jf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj-MOsBIKopbe97eBA8VuoLG3m0igWEuSs" target="_blank" class="text-decoration-none fw-semibold text-success">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="container my-5" id="certifications">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">My Certifications</h2>
+    <p class="text-muted">Here are some of my certifications.</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Sertifikat 1 MCF -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_mcf.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Microsoft Certificated Fundamental - AI-900</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sertifikat 2 Dicoding -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_dicoding.jpg" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Belajar Analisis Data dengan Python | Dicoding</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sertifikat 3 sql sololearn -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_sololearn.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">SQL Intermediate | Sololearn</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplikasi pola ini sampai sertifikat ke-15 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_coursera_ML.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Machine Learning | Coursera</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_coursera_linear_algebra.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Linear Algebra for Machine Learning and Data Science | Coursera</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_coursera_crash_course_python.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Crash Course on Python | Coursera</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_mos.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Microsft Office Specialist (Word 2019)</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_dicoding.jpg" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">English Language Test (497) | BEES ITPLN</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_semnas.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Chairperson of Seminas Nasional FTEN 2024</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertfif_data_myskill.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Data Analysis Fundamental</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Image/sertif_mbkm.png" class="card-img-top" alt="Certificate 1">
+        <div class="card-body">
+          <h5 class="card-title">Sertifikat Kepersertaan MBKM 2024</h5>
+          <p class="card-text">Certified in Machine Learning specialization with hands-on projects and model deployment.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <h5 class="mb-3">Contact Me</h5>
+    <p class="mb-1">
+      📱 WhatsApp: <a href="https://wa.me/6282297765807" target="_blank" class="text-decoration-none text-light">+62 822-9776-5807</a>
+    </p>
+    <p class="mb-3">
+      📧 Email: <a href="mailto:alifadhitya13@gmail.com" class="text-decoration-none text-light">alifadhitya13@gmail.com</a>
+    </p>
+    <hr class="border-secondary">
+    <p class="mb-0">Created by <strong>Alif Adhitya Rambani</strong></p>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
